@@ -10,6 +10,7 @@ pre: <svg class="icon"><use xlink:href="/sprite.svg#wrench"></use></svg>
 - [Import Transparent Private Keys]({{<relref "custom_path#private-key">}})
 - [Key Derivation Tool]({{<relref "keytool">}})
 - [More synchronization statistics]({{<relref "synchronization#statistics">}})
+- [Spam Filter]({{<relref "misc">}})
 
 ### 1.2.11
 
