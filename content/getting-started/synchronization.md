@@ -8,6 +8,11 @@ weight: 25
 Synchronization (Catchup) will automatically start when YWallet
 detects that it does not have the latest block data.
 
+{{%notice note%}}
+Synchronization is complete when *only* the block height number is 
+displayed above the QR code.
+{{%/notice%}}
+
 You can also manually trigger a rescan through the application menu.
 
 ## Statistics
