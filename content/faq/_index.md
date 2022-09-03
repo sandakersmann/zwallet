@@ -4,6 +4,8 @@ weight: 80
 pre: <svg class="icon"><use xlink:href="/sprite.svg#question"></use></svg>
 ---
 
+## Synchronization
+
 1. Why is synchronization taking so long?
 
    Starting from July 2022, there has been a great increase in activity
@@ -15,7 +17,42 @@ pre: <svg class="icon"><use xlink:href="/sprite.svg#question"></use></svg>
 
    {{%img_index chart.png %}}
 
-2. I have made a transfer into YWallet but I do not see my funds.
+2. But why is the synchronization of BTC/ETH/DOT/ADA/etc.
+   so quick then?
+
+   Because they are not private coins. When your BTC wallet
+   synchronizes, it does not interact with the blockchain
+   directly. It connects to a third-party service that
+   has *indexed* every account (it functions like a block explorer). Then your 
+   wallet can leverage this index and just download the data it needs.
+   Think of it as "searching for the definition of a word
+   in a dictionary". You can find the definition of any word very quickly because
+   the dictionary is sorted alphabetically.
+
+   However, your transactions are private with ZEC/YEC/XMR/etc, because they cannot be 
+   decrypted without the viewing key.
+   Consequently, third-party services *cannot index* the shielded addresses.
+   When a shielded wallet synchronizes, it must *download* and *process*
+   the blockchain locally. In ZEC/YEC, Lightwallets use a protocol that allows
+   them to skip downloading ~80% of the blockchain but it still is several
+   GB now for ZEC.
+
+3. But it used to be fast before!
+
+   Before there were very few shielded transactions. Less than 1 per block in average.
+   Since July, we see thousands of such transactions.
+
+   Why now and not before? No one knows.
+
+   But the protocol allows it. Either we change the protocol or we improve the technology.
+   Both options are being discussed. Currently, it is very inexpensive for someone
+   to create large transactions and saturate the network. 
+   One can argue that the technology is behind the economics. In other words, spam
+   is cheap, so spam happens.
+
+## Funds
+
+1. I have made a transfer into YWallet but I do not see my funds.
 
    If you have transferred to the *transparent* address, make sure you 
    have tapped on the QR code to switch to the transparent mode. YWallet
@@ -50,8 +87,10 @@ pre: <svg class="icon"><use xlink:href="/sprite.svg#question"></use></svg>
 
    Yes, but we highly recommend shielding these coins before spending them.
    The app is Shielded by Default.
-  
-8. Was there a ZWallet and WarpWallet?
+
+## Other questions
+
+1. Was there a ZWallet and WarpWallet?
 
    There used to be different versions of the app for Ycash and Zcash. The app was
    initially built for Zcash and was called ZWallet. Then it was ported to Ycash
