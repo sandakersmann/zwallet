@@ -4,6 +4,12 @@ weight: 80
 pre: <svg class="icon"><use xlink:href="/sprite.svg#wrench"></use></svg>
 ---
 
+### 1.2.13
+
+- Use lightwalletd spam filter when available
+- Bug fix: Reorg sometimes loses sapling witnesses
+- UX improvements
+
 ### 1.2.12
 
 - [Pause/Resume Sync]({{<relref "synchronization#pauseresume">}})
