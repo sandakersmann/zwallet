@@ -4,6 +4,10 @@ weight: 80
 pre: <svg class="icon"><use xlink:href="/sprite.svg#question"></use></svg>
 ---
 
+## Where do I get help?
+
+Join the Ywallet [Discord](https://discord.gg/V5uFR6EE9h)
+
 ## Synchronization
 
 1. Why is synchronization taking so long?
