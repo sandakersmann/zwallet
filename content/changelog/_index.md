@@ -9,6 +9,10 @@ pre: <svg class="icon"><use xlink:href="/sprite.svg#wrench"></use></svg>
 - Use lightwalletd spam filter when available
 - Bug fix: Reorg sometimes loses sapling witnesses
 - UX improvements
+    - Spending is allowed during synchronization
+    - Unconfirmed balance (if supported by the server)
+
+{{%img_index "Screenshot_20220912-214736.jpg" %}}
 
 ### 1.2.12
 
