@@ -140,4 +140,7 @@ safe place away from spying eyes.
 {{% /notice %}}
 
 
-Thanks for your support. <a href='ycash:ys1jl5whtnlq56x5g3zcr36jmjhz9e295mgjmc64qsw7dcqdjp9l6ekydp2k0hj9k27x8sgqh6580t?amount=10&memo=9g'>Click here to donate 10 YEC</a> but Any amount is welcome.
+Thanks for your support. <a href='ycash:ys1jl5whtnlq56x5g3zcr36jmjhz9e295mgjmc64qsw7dcqdjp9l6ekydp2k0hj9k27x8sgqh6580t?amount=10&memo=9g'>Click here to donate 10 YEC</a>, any amount is welcome.
+
+
+[Privacy Policy]({{<relref "privacy_policy">}})
