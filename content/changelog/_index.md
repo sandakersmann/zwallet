@@ -4,6 +4,11 @@ weight: 80
 pre: <svg class="icon"><use xlink:href="/sprite.svg#wrench"></use></svg>
 ---
 
+### 1.2.14
+
+- [Table/List views for Messages, Notes and Transaction History]({{<relref "views">}})
+- Synchronization updates account balance, notes and transaction progressively
+
 ### 1.2.13
 
 - Use lightwalletd spam filter when available
