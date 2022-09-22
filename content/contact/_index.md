@@ -1,10 +1,9 @@
 ---
-layout: default
 title: Contacts
 weight: 40
 has_children: true
 chapter: true
-pre: <svg class="icon"><use xlink:href="/sprite.svg#address-book"></use></svg>
+icon: address-book
 ---
 
 # Contacts

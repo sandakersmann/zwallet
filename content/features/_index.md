@@ -1,7 +1,7 @@
 ---
 title: Features
 weight: 5
-pre: <svg class="icon"><use xlink:href="/sprite.svg#list"></use></svg>
+icon: list
 ---
 
 ## Main Features

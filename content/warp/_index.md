@@ -1,7 +1,7 @@
 ---
 title: Warp Sync
 weight: 70
-pre: <svg class="icon"><use xlink:href="/sprite.svg#rabbit"></use></svg>
+icon: rabbit
 ---
 
 ## What's so important about Synchronization?

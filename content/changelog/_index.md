@@ -1,7 +1,7 @@
 ---
 title: Changelog
 weight: 80
-pre: <svg class="icon"><use xlink:href="/sprite.svg#wrench"></use></svg>
+icon: wrench
 ---
 
 ### 1.2.14

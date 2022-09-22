@@ -1,10 +1,9 @@
 ---
-layout: default
 title: Messages
 weight: 30
 has_children: true
 chapter: true
-pre: <svg class="icon"><use xlink:href="/sprite.svg#envelope"></use></svg>
+icon: envelope
 ---
 
 # Messages

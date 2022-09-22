@@ -2,7 +2,7 @@
 title: Views
 chapter: true
 weight: 31
-pre: <svg class="icon"><use xlink:href="/sprite.svg#table"></use></svg>
+icon: table
 ---
 
 # Views

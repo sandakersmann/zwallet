@@ -1,7 +1,7 @@
 ---
 title: FAQ
 weight: 80
-pre: <svg class="icon"><use xlink:href="/sprite.svg#question"></use></svg>
+icon: question
 ---
 
 ## Where do I get help?
