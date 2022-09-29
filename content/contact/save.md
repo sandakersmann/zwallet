@@ -5,7 +5,7 @@ parent: Contacts
 weight: 20
 ---
 
-{{< img IMG_0085.PNG >}}
+{{< img 2022-09-29_22-29-05.png >}}
 
 Changes to your contacts are first saved locally on your device.
 

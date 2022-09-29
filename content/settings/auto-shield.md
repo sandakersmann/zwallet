@@ -5,11 +5,9 @@ parent: Settings
 weight: 3
 ---
 
-{{< img IMG_0141.PNG >}}
+{{< img 2022-09-29_22-30-55.png >}}
 
-1. Auto shield your transparent balance when it is higher than this value. 
-The app will create a separate transaction
-2. Include the transparent balance in the spendable transaction amount
+1. Auto-Shield threshold. A value of 0 disables auto shielding
 
 ## Remarks
 

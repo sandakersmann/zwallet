@@ -9,7 +9,7 @@ weight: 30
 The person who sends you coins needs to know your account address.
 There are several ways to communicate it.
 
-{{< img IMG_0042.PNG >}}
+{{< img 2022-09-29_22-22-45.png >}}
 
 The wallet shows the address on the account page, but it is long and unpractical to type it in.
 It is more practical to do one of the following:

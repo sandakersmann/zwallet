@@ -24,15 +24,17 @@ increased
 The app tracks wallet in and outflows and evaluates profit and loss
 based on [the average cost method](https://en.wikipedia.org/wiki/Average_cost_method).
 
-{{< img IMG_0161.PNG >}}
+{{< img 2022-09-29_22-37-25.png >}}
 
 1. Historical Price
 2. Realized P/L 
 3. Unrealized P/L (Marked to Market)
 4. Total P/L (Realized + Unrealized)
 5. Quantity and table (scroll right)
-6. Tap/Hold to browse the chart
-7. Adjust the time range on the Settings page
+6. Data Table
+7. Save as CSV
+8. Tap/Hold to browse the chart
+9. Adjust the time range on the Settings page
 
 ## Remarks
 

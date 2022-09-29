@@ -3,7 +3,7 @@ title: Key Tool
 weight: 30
 ---
 
-{{< img 2022-07-27_10-39-08.png >}}
+{{< img 2022-09-29_22-41-30.png >}}
 
 The Key Tool is a transparent & secret key derivation tool based
 on BIP32/39/44 and ZIP32.

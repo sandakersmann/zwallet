@@ -5,7 +5,7 @@ parent: Settings
 weight: 5
 ---
 
-{{< img IMG_0100_1.PNG >}}
+{{< img 2022-09-29_22-49-54.png >}}
 
 1. Choose the chart time range. They all end at the current date.
 By default, charts span 1 year (365 days) and can be set to

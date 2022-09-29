@@ -5,14 +5,12 @@ parent: Advanced Usage
 weight: 1
 ---
 
-{{< img IMG_0140.PNG >}}
+{{< img 2022-09-29_22-34-52.png >}}
 
-1. Show/Hide advanced options
-2. Encrypted Memo
-3. Enable/Disable rounding to 0.001 coin. If rounding is disabled,
+1. Enable/Disable rounding to 0.001 coin. If rounding is disabled,
 the app uses zats: 1/100,000,000 of a coin
-4. If checked, the transaction will use the balance in the transparent address too
-5. **Split Notes**: The maximum amount per output note. If this is less than the amount
+2. If checked, the transaction will use the balance in the transparent address too
+3. **Split Notes**: The maximum amount per output note. If this is less than the amount
 sent, the app will create several notes. The change is not subject to
 this cap
 

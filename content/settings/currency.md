@@ -5,7 +5,7 @@ parent: Settings
 weight: 4
 ---
 
-{{< img IMG_0099_3.PNG >}}
+{{< img 2022-09-29_22-49-53.png >}}
 
 1. Choose the reference Fiat/Crypto currency
 among 

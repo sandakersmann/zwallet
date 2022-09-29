@@ -8,7 +8,7 @@ weight: 2
 The budget page shows your largest spending/payments and
 a chart of your past account balance. 
 
-{{< img IMG_0160.PNG >}}
+{{< img 2022-09-29_22-36-20.png >}}
 
 The table shows the top 5 addresses where you spent the most.
 

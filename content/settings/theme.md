@@ -5,21 +5,20 @@ parent: Settings
 weight: 2
 ---
 
-{{< img IMG_0099_1.PNG >}}
+{{< img 2022-09-29_22-42-29.png >}}
 
 1. Select the theme color
 2. and Brightness
+3. Choose custom colors
 
 Unlike other settings, changes are applied immediately.
 
 ## Custom Theme
 
-{{< img IMG_0151.PNG >}}
-
 1. Select "Custom" as the theme
 2. Click on the Edit button to open the Theme Editor
 
-{{< img IMG_0152.PNG >}}
+{{< img 2022-09-29_22-44-50.png >}}
 
 1. Choose the Primary color for OK buttons, etc
 2. Choose the Primary Variant color
