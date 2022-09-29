@@ -7,18 +7,38 @@ weight: 20
 
 Open the account manager by selecting "Accounts" in the app menu.
 
-{{< img IMG_0057.PNG >}}
+{{< img "2022-09-29_18-36-37.png" >}}
 
-1. Name
-2. Total Balance
-3. Shielded Balance
-4. Transparent Balance
-5. Long Press to Edit Name
-6. Swipe left/right to Delete
-7. Add/Restore Account
+1. Currency
+2. Name
+3. Total Balance
+4. Shielded Balance
+5. Transparent Balance
+6. Long Press to Edit Name
+7. Swipe left/right to Delete
+8. Add/Restore Account
 
 To return to the account page, select an account by tapping on its name. Or press the back button,
 if you don't want to change the current selection.
+
+## Add Account
+
+Press the Button "+" in the bottom right corner.
+
+## Change Account Name
+
+Long Press on the Account row.
+
+{{<img "2022-09-29_18-39-18.png">}}
+
+
+## Delete Account
+
+Swipe the account row left or right and release.
+{{<img "2022-09-29_18-32-41.png">}}
+
+Then confirm the deletion. If the account has an outstanding balance,
+you will be asked to confirm twice.
 
 ## Remarks
 
