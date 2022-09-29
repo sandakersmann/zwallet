@@ -7,10 +7,14 @@ weight: 60
 
 The History Tab shows the transaction history. 
 
+They can be displayed in a list or a table depending on your
+[view]({{<relref "views">}}) settings.
 
-{{< img IMG_0064.PNG >}}
-{{< img IMG_0065.PNG >}}
-{{< img IMG_0066.PNG >}}
+{{< img 2022-09-29_20-28-26.png >}}
+
+## Table Form
+
+{{< img 2022-09-29_20-29-51.png >}}
 
 1. Tap to toggle the display of height / confirmations
 2. Tap to sort by Date/Time (switches between ascending, descending, and unsorted)
@@ -25,20 +29,20 @@ The History Tab shows the transaction history.
 You may have to scroll the footer to the left if your screen is too small.
 11. Sort by Address / Contact Name
 12. Sort by Memo
+13. Export to CSV (see below)
 
 ## Transaction Details
 
 Tap on a transaction to show the details of the transactions
 
-{{< img Screenshot_20220403-144819.jpg >}}
+{{< img 2022-09-29_20-31-34.png >}}
 
 1. Opens the transaction in an external block explorer
 
 ## Export to CSV
 
-{{< img IMG_0137.PNG >}}
-
-1. Click on the 'Save' icon to export your transaction history as a CSV file
+Click on the 'Save' icon to export your transaction history as a CSV 
+file.
 
 ## Remarks
 

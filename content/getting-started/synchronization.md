@@ -20,25 +20,26 @@ You can also manually trigger a rescan through the application menu.
 During Rescan or Catchup, the blockheight will cycle between
 the following information:
 - current height / latest height
-{{%img 2022-07-22_16-27-57.png %}}
+{{%img 2022-09-29_21-06-18.png %}}
 
-- synchronization %
-{{%img 2022-07-22_16-23-18.png %}}
+- synchronization % (CATCHUP for incremental 
+sync and RESCAN for full scan)
+{{%img 2022-09-29_21-05-16.png %}}
 
 - number of blocks remaining to process
-{{%img 2022-07-22_16-23-25.png %}}
+{{%img 2022-09-29_21-05-25.png %}}
 
 - timestamp of latest block processed
-{{%img 2022-07-22_16-23-34.png %}}
+{{%img 2022-09-29_21-05-34.png %}}
 
 - ETA (Estimated Time Remaining to complete the scan)
-{{%img 2022-07-22_16-23-45.png %}}
+{{%img 2022-09-29_21-05-43.png %}}
 
 - Bytes downloaded from the server
-{{%img 2022-08-16_23-09-52.png %}}
+{{%img 2022-09-29_21-05-51.png %}}
 
 - Number of transaction outputs decrypted
-{{%img 2022-08-16_23-09-33.png %}}
+{{%img 2022-09-29_21-05-59.png %}}
 
 
 {{%notice note%}}

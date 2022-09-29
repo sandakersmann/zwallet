@@ -21,16 +21,21 @@ Open the account manager by selecting "Accounts" in the app menu.
 To return to the account page, select an account by tapping on its name. Or press the back button,
 if you don't want to change the current selection.
 
+## Select an account
+
+Tap on the account name
+
 ## Add Account
 
 Press the Button "+" in the bottom right corner.
+
+See next section [Adding More Accounts]({{<relref "account/add">}}).
 
 ## Change Account Name
 
 Long Press on the Account row.
 
 {{<img "2022-09-29_18-39-18.png">}}
-
 
 ## Delete Account
 

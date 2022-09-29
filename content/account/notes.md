@@ -7,9 +7,16 @@ weight: 40
 
 The Note Tab shows your received notes.
 
+They can be displayed in a list or a table depending on your
+[view]({{<relref "views">}}) settings.
+
+{{< img 2022-09-29_20-21-17.png >}}
+
 ## Display and Sorting
 
-{{< img IMG_0058.PNG >}}
+In **TABLE** form, 
+
+{{< img 2022-09-29_20-23-39.png >}}
 
 1. Tap to toggle the display of Height or Number of Confirmations
 2. Tap to sort by Date/Time (switches between ascending, descending, and unsorted)
@@ -27,8 +34,7 @@ The Note Tab shows your received notes.
 
 ## Navigation
 
-{{< img IMG_0077.PNG >}}
-{{< img IMG_0059.PNG >}}
+{{< img 2022-09-29_20-25-19.png >}}
 
 1. Current Page
 2. Go to First Page

@@ -12,10 +12,11 @@ and the coins it contains.
 
 Fortunately, it is very easy to make a backup.
 
-{{% notice note %}}
+{{% notice info %}}
 The account backup is the 24 words (in sequence) displayed on the Backup page (**seed phrase**)
 {{% /notice %}}
-{{< img IMG_0071.PNG >}}
+
+{{< img 2022-09-29_20-12-50.png >}}
 
 When you create a new account, the app will show you the Backup page automatically.
 If you need to recall that page, open the app menu and select "Backup".
@@ -36,13 +37,5 @@ spent from them
 
 To restore an account, go to the "Accounts" page and click on the button "+".
 
-{{< img IMG_0072.PNG >}}
-
-1. Enter the account name
-2. Enter the seed phrase, secret key, or viewing key
-3. Press the button "ADD"
-
-You can add/restore several accounts. When you leave the account manager page,
-the app will ask you if you want to rescan the blockchain if needed.
-
-> Scanning updates every account. You don't need to rescan each new account individually
+Follow the instructions for "Restoring an Account" 
+on the page [Adding More Accounts]({{<relref "account/add#restoring-an-account">}}).

@@ -8,7 +8,7 @@ weight: 20
 
 ## Shielded Mode
 
-{{< img IMG_0041.PNG >}}
+{{< img 2022-09-29_21-01-39.png >}}
 
 1. Address QR Code
 2. Address (middle part elided)
@@ -40,7 +40,7 @@ This function can be turned off in the settings.
 
 ## Transparent Address Mode
 
-{{< img IMG_0040.PNG >}}
+{{< img 2022-09-29_21-03-37.png >}}
 
 Your account is *primary* shielded: Most functions affect the shielded address.
  

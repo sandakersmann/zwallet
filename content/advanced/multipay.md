@@ -8,7 +8,7 @@ weight: 4
 MultiPay allows you to create a single payment transaction with
 multiple recipients.
 
-{{< img IMG_0089.PNG >}}
+{{< img 2022-09-29_20-41-20.png >}}
 
 1. Tap to add a recipient ("Add")
 2. Finish and send the transaction ("Send")
@@ -17,31 +17,27 @@ multiple recipients.
 
 After tapping the button "+"
 
-{{< img IMG_0090.PNG >}}
+{{< img 2022-09-29_20-42-19.png >}}
 
-1. Recipient address or contact name
-2. Amount
-3. Optional Memo
-4. Add the recipient to the list
+Adding a new recipient is done using the same entry 
+form as a single recipient payment.
 
-## Recipients
+See [Send Coins]({{<relref "getting-started/send">}}).
 
-{{< img IMG_0091.PNG >}}
+## Remove Recipients
 
-1. Address
-2. Amount
+Swipe the Recipient row left/right off the screen to discard it.
 
 ## Send
 
 After pressing the button "Send"
 
-{{< img IMG_0092.PNG >}}
+{{< img 2022-09-29_20-46-45.png >}}
 
 1. Confirm and send the transaction
 
 ## Remarks
 
-- Multipay does not support using Fiat currency or zats yet
 - Contacts are replaced by their addresses
 - Notes can have an amount equal to 0
 - Multipay transactions can be empty

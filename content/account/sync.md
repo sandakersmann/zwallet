@@ -24,12 +24,4 @@ a given date (1).
 
 ## Scan Progress Status
 
-{{< img IMG_0055.PNG >}}
-
-1. Current block height being processed
-2. Latest block height
-3. The Estimated remaining time of the full scan
-
-When the app is synchronized with the current block, it just displays
-the block height.
-
+Refer to [Sync Status]({{<relref "synchronization#statistics">}}).

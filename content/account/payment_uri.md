@@ -5,7 +5,7 @@ parent: Accounts
 weight: 50
 ---
 
-{{< img IMG_0143.PNG >}}
+{{< img 2022-09-29_20-27-04.png >}}
 
 The Receive/Payment URI page is for making QR codes that encode
 

@@ -6,23 +6,38 @@ nav_order: 4
 weight: 40
 ---
 
-{{< img IMG_0043.PNG >}}
+{{< img 2022-09-29_20-48-36.png >}}
 
 1. Start from the account page by clicking on the "Send" button in the bottom right corner
 
-{{< img IMG_0125.PNG >}}
+{{< img 2022-09-29_20-50-14.png >}}
 
 1. Address to send coins to
 2. Tap to open the QR code scanner
 3. Either enter the amount in mZEC or 
 4. Enter the amount in Fiat currency. The other field updates automatically
 5. Tap to spend the entire balance
-6. Show/Collapse advanced options
-7. Tap to send.
+
+## Memo
+
+6. Check to include your address in the memo. The recipient can directly reply to you if he is using Ywallet too.
+7. Memo Subject
+8. Memo Body
+
+{{% notice info %}}
+Memo subject, body and reply-to are supported between
+YWallet sender/receiver. If not, they will appear
+in the text of the memo.
+{{% /notice %}}
+
+## Advanced Settings
+
+9. These settings are detailed in the section 
+[Advanced Usage/Send Options]({{<relref "advanced-send">}}).
 
 ## Detailed balances
 
-{{< img IMG_0125_1.PNG >}}
+{{< img 2022-09-29_20-50-15.png >}}
 
 1. Total balance available = transparent + shielded
 2. Shielded [NOTES]({{<relref notes>}}) that don't have enough confirmations for sending 

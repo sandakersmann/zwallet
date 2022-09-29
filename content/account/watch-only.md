@@ -13,8 +13,12 @@ Making an account watch-only is **NOT** reversible and you must have a backup
 of the seed phrase to restore the account later.
 
 
-{{< img IMG_0073.PNG >}}
-{{< img IMG_0074.PNG >}}
+{{< img 2022-09-29_20-37-05.png >}}
+{{< img 2022-09-29_20-38-01.png >}}
 
-1. Select the Cold Storage option from the app menu
+1. Select the Advanced Menu from the app menu, then "Convert
+to Watch-Only"
 2. Choose "DELETE" 
+
+If you imported an account with a viewing key, your account is already
+watch-only.
