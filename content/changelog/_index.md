@@ -4,6 +4,10 @@ weight: 80
 icon: wrench
 ---
 
+### 1.2.15
+
+- [Background Synchronization]({{<relref "synchronization#background-sync">}})
+
 ### 1.2.14
 
 - [Table/List views for Messages, Notes and Transaction History]({{<relref "views">}})

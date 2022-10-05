@@ -77,3 +77,30 @@ download more data from the server but will complete processing
 the data it currently has.
 {{%/notice%}}
 
+## Background Sync (Android)
+
+Starting from version 1.2.15, once started, synchronization
+continues as a service.
+
+You can switch to other apps or even lock your device, and
+YWallet will synchronize in the background.
+
+There will be a notification message in the notification tray
+with a progress indicator.
+
+- Background Sync is only available on Android devices.
+- On iOS, due to platform restrictions, the application must remain
+in the foreground.
+- On desktop, Synchronization always happens concurrently with other programs.
+
+{{% notice warning %}}
+Some Android manufacturers prefer battery life over proper 
+functionality of your apps.
+Refer to [Don’t kill app](https://dontkillmyapp.com/) for more information.
+
+{{% /notice %}}
+
+{{< youtube C_6VTUBhhBY >}}
+
+<link href="/youtube.css" rel=stylesheet integrity>
+<script src="/youtube.js"></script>
