@@ -7,6 +7,8 @@ icon: wrench
 ### 1.2.15
 
 - [Background Synchronization]({{<relref "synchronization#background-sync">}})
+- Background Tx Building
+- Local Notifications
 
 ### 1.2.14
 
