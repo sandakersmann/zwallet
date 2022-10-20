@@ -77,7 +77,9 @@ download more data from the server but will complete processing
 the data it currently has.
 {{%/notice%}}
 
-## Background Sync (Android)
+## Background Sync
+
+On **Android**,
 
 Starting from version 1.2.15, once started, synchronization
 continues as a service.
@@ -100,7 +102,16 @@ Refer to [Don’t kill app](https://dontkillmyapp.com/) for more information.
 
 {{% /notice %}}
 
-{{< youtube C_6VTUBhhBY >}}
+## Local Notifications
+
+On **Android**,
+
+You'll receive a tray notification if the balance of your account changes
+as a result of new confirmed transaction. YWallet must be running but does
+not need to be in the foreground.
 
 <link href="/youtube.css" rel=stylesheet integrity>
 <script src="/youtube.js"></script>
+
+{{< youtube C_6VTUBhhBY >}}
+
