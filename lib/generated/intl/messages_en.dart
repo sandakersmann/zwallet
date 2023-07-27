@@ -18,65 +18,65 @@ final messages = new MessageLookup();
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  String get localeName => 'en';
+  String get localeName => 'zh_Hant';
 
-  static String m0(currency) => "Amount in ${currency}";
+  static String m0(currency) => "金額（${currency}）";
 
   static String m1(ticker) =>
-      "Are you sure you want to save your contacts? It will cost 0.01 m${ticker}";
+      "您確定要儲存您的聯絡人嗎？這將會花費 0.01 m${ticker}";
 
-  static String m2(name) => "Backup Data - ${name} - Required for Restore";
+  static String m2(name) => "備份數據 - ${name} - 恢復所需";
 
   static String m3(rewindHeight) =>
-      "Block reorg detected. Rewind to ${rewindHeight}";
+      "檢測到區塊重新組織。倒回到高度 ${rewindHeight}";
 
   static String m4(address, amount) =>
-      "Do you want to sign a transaction to ${address} for ${amount}";
+      "您是否要為 ${address} 簽署交易，金額為 ${amount}";
 
   static String m5(ticker) =>
-      "Do you want to transfer your entire transparent balance to your shielded address? A Network fee of 0.01 m${ticker} will be deducted.";
+      "您是否要將您的所有透明餘額轉移到隱藏地址？將收取 0.01 m${ticker} 的網絡手續費。";
 
-  static String m6(app) => "${app} Encrypted Backup";
+  static String m6(app) => "${app} 加密備份";
 
-  static String m7(msg) => "ERROR: ${msg}";
+  static String m7(msg) => "錯誤：${msg}";
 
-  static String m8(message) => "Invalid QR code: ${message}";
+  static String m8(message) => "無效的 QR 碼：${message}";
 
-  static String m9(amount, ticker) => "Max spendable: ${amount} ${ticker}";
+  static String m9(amount, ticker) => "最大可用金額：${amount} ${ticker}";
 
-  static String m10(num) => "${num} more signers needed";
+  static String m10(num) => "還需要 ${num} 個簽署者";
 
-  static String m11(level) => "PRIVACY: ${level}";
+  static String m11(level) => "隱私等級：${level}";
 
-  static String m12(ticker) => "Receive ${ticker}";
+  static String m12(ticker) => "接收 ${ticker}";
 
-  static String m13(amount, ticker) => "Received ${amount} ${ticker}";
+  static String m13(amount, ticker) => "已接收 ${amount} ${ticker}";
 
-  static String m14(height) => "Rescan Requested from ${height}...";
+  static String m14(height) => "已從高度 ${height} 要求重新掃描...";
 
-  static String m15(ticker) => "Send ${ticker}";
+  static String m15(ticker) => "發送 ${ticker}";
 
-  static String m16(ticker) => "Send ${ticker} to...";
+  static String m16(ticker) => "發送 ${ticker} 至...";
 
-  static String m17(app) => "Sent from ${app}";
+  static String m17(app) => "來自 ${app} 的發送";
 
   static String m18(amount, ticker, count) =>
-      "Sending a total of ${amount} ${ticker} to ${count} recipients";
+      "發送總數 ${amount} ${ticker} 至 ${count} 個收件人";
 
   static String m19(aZEC, ticker, address) =>
-      "Sending ${aZEC} ${ticker} to ${address}";
+      "發送 ${aZEC} ${ticker} 至 ${address}";
 
-  static String m20(amount, ticker) => "Spent ${amount} ${ticker}";
+  static String m20(amount, ticker) => "花費 ${amount} ${ticker}";
 
-  static String m21(index, name) => "Sub Account ${index} of ${name}";
+  static String m21(index, name) => "${name} 的子賬戶 ${index}";
 
-  static String m22(name) => "Sub Account of ${name}";
+  static String m22(name) => "${name} 的子賬戶";
 
-  static String m23(text) => "${text} copied to clipboard";
+  static String m23(text) => "已複製 ${text} 至剪貼板";
 
-  static String m24(txid) => "TX ID: ${txid}";
+  static String m24(txid) => "交易 ID：${txid}";
 
-  static String m25(currency) => "Use ${currency}";
+  static String m25(currency) => "使用 ${currency}";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
@@ -84,444 +84,324 @@ class MessageLookup extends MessageLookupByLibrary {
         "M3": MessageLookupByLibrary.simpleMessage("3 M"),
         "M6": MessageLookupByLibrary.simpleMessage("6 M"),
         "Y1": MessageLookupByLibrary.simpleMessage("1 Y"),
-        "about": MessageLookupByLibrary.simpleMessage("About"),
-        "accentColor": MessageLookupByLibrary.simpleMessage("Accent Color"),
-        "account": MessageLookupByLibrary.simpleMessage("Account"),
-        "accountBalanceHistory":
-            MessageLookupByLibrary.simpleMessage("Account Balance History"),
+        "about": MessageLookupByLibrary.simpleMessage("關於"),
+        "accentColor": MessageLookupByLibrary.simpleMessage("強調顏色"),
+        "account": MessageLookupByLibrary.simpleMessage("帳戶"),
+        "accountBalanceHistory": MessageLookupByLibrary.simpleMessage("帳戶餘額歷史"),
         "accountHasSomeBalanceAreYouSureYouWantTo":
-            MessageLookupByLibrary.simpleMessage(
-                "Account has some BALANCE. Are you sure you want to delete it?"),
-        "accountIndex": MessageLookupByLibrary.simpleMessage("Account Index"),
-        "accountName": MessageLookupByLibrary.simpleMessage("Account Name"),
-        "accountNameIsRequired":
-            MessageLookupByLibrary.simpleMessage("Account name is required"),
-        "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
-        "add": MessageLookupByLibrary.simpleMessage("Add"),
-        "addARecipientAndItWillShowHere": MessageLookupByLibrary.simpleMessage(
-            "Add a recipient and it will show here"),
-        "addContact": MessageLookupByLibrary.simpleMessage("Add Contact"),
-        "addnew": MessageLookupByLibrary.simpleMessage("New/Restore"),
-        "address": MessageLookupByLibrary.simpleMessage("Address"),
-        "addressCopiedToClipboard":
-            MessageLookupByLibrary.simpleMessage("Address copied to clipboard"),
-        "addressIsEmpty":
-            MessageLookupByLibrary.simpleMessage("Address is empty"),
-        "advanced": MessageLookupByLibrary.simpleMessage("Advanced"),
-        "advancedOptions":
-            MessageLookupByLibrary.simpleMessage("Advanced Options"),
-        "always": MessageLookupByLibrary.simpleMessage("Always"),
-        "amount": MessageLookupByLibrary.simpleMessage("Amount"),
+            MessageLookupByLibrary.simpleMessage("帳戶有一些餘額。您確定要刪除它嗎？"),
+        "accountIndex": MessageLookupByLibrary.simpleMessage("帳戶索引"),
+        "accountName": MessageLookupByLibrary.simpleMessage("帳戶名稱"),
+        "accountNameIsRequired": MessageLookupByLibrary.simpleMessage("帳戶名稱是必需的"),
+        "accounts": MessageLookupByLibrary.simpleMessage("帳戶"),
+        "add": MessageLookupByLibrary.simpleMessage("新增"),
+        "addARecipientAndItWillShowHere":
+            MessageLookupByLibrary.simpleMessage("新增收件人，它將顯示在這裡"),
+        "addContact": MessageLookupByLibrary.simpleMessage("新增聯絡人"),
+        "addnew": MessageLookupByLibrary.simpleMessage("新增/還原"),
+        "address": MessageLookupByLibrary.simpleMessage("地址"),
+        "addressCopiedToClipboard": MessageLookupByLibrary.simpleMessage("地址已複製到剪貼簿"),
+        "addressIsEmpty": MessageLookupByLibrary.simpleMessage("地址為空"),
+        "advanced": MessageLookupByLibrary.simpleMessage("進階"),
+        "advancedOptions": MessageLookupByLibrary.simpleMessage("進階選項"),
+        "always": MessageLookupByLibrary.simpleMessage("總是"),
+        "amount": MessageLookupByLibrary.simpleMessage("金額"),
         "amountInSettingscurrency": m0,
-        "amountMustBeANumber":
-            MessageLookupByLibrary.simpleMessage("Amount must be a number"),
-        "amountMustBePositive":
-            MessageLookupByLibrary.simpleMessage("Amount must be positive"),
-        "amountTooHigh":
-            MessageLookupByLibrary.simpleMessage("Amount too high"),
-        "antispamFilter":
-            MessageLookupByLibrary.simpleMessage("Anti-Spam Filter"),
-        "applicationReset":
-            MessageLookupByLibrary.simpleMessage("Application Reset"),
-        "approve": MessageLookupByLibrary.simpleMessage("APPROVE"),
+        "amountMustBeANumber": MessageLookupByLibrary.simpleMessage("金額必須為數字"),
+        "amountMustBePositive": MessageLookupByLibrary.simpleMessage("金額必須為正數"),
+        "amountTooHigh": MessageLookupByLibrary.simpleMessage("金額過高"),
+        "antispamFilter": MessageLookupByLibrary.simpleMessage("反垃圾郵件過濾器"),
+        "applicationReset": MessageLookupByLibrary.simpleMessage("應用程式重置"),
+        "approve": MessageLookupByLibrary.simpleMessage("確認"),
         "areYouSureYouWantToDeleteThisContact":
-            MessageLookupByLibrary.simpleMessage(
-                "Are you sure you want to delete this contact?"),
+            MessageLookupByLibrary.simpleMessage("您確定要刪除此聯絡人嗎？"),
         "areYouSureYouWantToDeleteThisSendTemplate":
-            MessageLookupByLibrary.simpleMessage(
-                "Are you sure you want to delete this send template?"),
+            MessageLookupByLibrary.simpleMessage("您確定要刪除此發送模板嗎？"),
         "areYouSureYouWantToSaveYourContactsIt": m1,
-        "auto": MessageLookupByLibrary.simpleMessage("Auto"),
-        "autoHideBalance": MessageLookupByLibrary.simpleMessage("Hide Balance"),
-        "backup": MessageLookupByLibrary.simpleMessage("Backup"),
-        "backupAllAccounts":
-            MessageLookupByLibrary.simpleMessage("Backup All Accounts"),
+        "auto": MessageLookupByLibrary.simpleMessage("自動"),
+        "autoHideBalance": MessageLookupByLibrary.simpleMessage("自動隱藏餘額"),
+        "backup": MessageLookupByLibrary.simpleMessage("備份"),
+        "backupAllAccounts": MessageLookupByLibrary.simpleMessage("備份所有帳戶"),
         "backupDataRequiredForRestore": m2,
-        "backupEncryptionKey":
-            MessageLookupByLibrary.simpleMessage("Backup Encryption Key"),
+        "backupEncryptionKey": MessageLookupByLibrary.simpleMessage("備份加密金鑰"),
         "backupWarning": MessageLookupByLibrary.simpleMessage(
-            "No one can recover your secret keys. If you don\'t have a backup and your phone breaks down, you WILL LOSE YOUR MONEY. You can reach this page by the app menu then Backup"),
-        "balance": MessageLookupByLibrary.simpleMessage("Balance"),
-        "barcode": MessageLookupByLibrary.simpleMessage("Barcode"),
-        "barcodeScannerIsNotAvailableOnDesktop":
-            MessageLookupByLibrary.simpleMessage(
-                "Barcode scanner is not available on desktop"),
-        "blockExplorer": MessageLookupByLibrary.simpleMessage("Block Explorer"),
+            "沒有人能夠恢復您的私鑰。如果您沒有備份且手機出現故障，您將會丟失您的資金。您可以通過應用程式菜單，然後進入備份頁面"),
+        "balance": MessageLookupByLibrary.simpleMessage("餘額"),
+        "barcode": MessageLookupByLibrary.simpleMessage("條碼"),
+        "barcodeScannerIsNotAvailableOnDesktop": MessageLookupByLibrary.simpleMessage("桌面版不支援條碼掃描"),
+        "blockExplorer": MessageLookupByLibrary.simpleMessage("區塊瀏覽器"),
         "blockReorgDetectedRewind": m3,
-        "blue": MessageLookupByLibrary.simpleMessage("Blue"),
-        "body": MessageLookupByLibrary.simpleMessage("Body"),
-        "broadcast": MessageLookupByLibrary.simpleMessage("Broadcast"),
-        "broadcastFromYourOnlineDevice": MessageLookupByLibrary.simpleMessage(
-            "Broadcast from your online device"),
-        "budget": MessageLookupByLibrary.simpleMessage("Budget"),
-        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
-        "cancelScan": MessageLookupByLibrary.simpleMessage("Cancel Scan"),
-        "changeAccountName":
-            MessageLookupByLibrary.simpleMessage("Change Account Name"),
-        "changeTransparentKey":
-            MessageLookupByLibrary.simpleMessage("Change Transparent Key"),
-        "checkTransaction":
-            MessageLookupByLibrary.simpleMessage("Check Transaction"),
-        "close": MessageLookupByLibrary.simpleMessage("Close"),
-        "closeApplication":
-            MessageLookupByLibrary.simpleMessage("Close Application"),
-        "coffee": MessageLookupByLibrary.simpleMessage("Coffee"),
-        "coldStorage": MessageLookupByLibrary.simpleMessage("Cold Storage"),
-        "color": MessageLookupByLibrary.simpleMessage("Color"),
+        "blue": MessageLookupByLibrary.simpleMessage("藍色"),
+        "body": MessageLookupByLibrary.simpleMessage("正文"),
+        "broadcast": MessageLookupByLibrary.simpleMessage("廣播"),
+        "broadcastFromYourOnlineDevice": MessageLookupByLibrary.simpleMessage("從您的在線設備進行廣播"),
+        "budget": MessageLookupByLibrary.simpleMessage("預算"),
+        "cancel": MessageLookupByLibrary.simpleMessage("取消"),
+        "cancelScan": MessageLookupByLibrary.simpleMessage("取消掃描"),
+        "changeAccountName": MessageLookupByLibrary.simpleMessage("更改帳戶名稱"),
+        "changeTransparentKey": MessageLookupByLibrary.simpleMessage("更改透明金鑰"),
+        "checkTransaction": MessageLookupByLibrary.simpleMessage("檢查交易"),
+        "close": MessageLookupByLibrary.simpleMessage("關閉"),
+        "closeApplication": MessageLookupByLibrary.simpleMessage("關閉應用程式"),
+        "coffee": MessageLookupByLibrary.simpleMessage("咖啡"),
+        "coldStorage": MessageLookupByLibrary.simpleMessage("冷儲存"),
+        "color": MessageLookupByLibrary.simpleMessage("顏色"),
         "confirmDeleteAccount": MessageLookupByLibrary.simpleMessage(
-            "Are you SURE you want to DELETE this account? You MUST have a BACKUP to recover it. This operation is NOT reversible."),
+            "您確定要刪除此帳戶嗎？您必須有備份才能恢復。此操作不可撤銷。"),
         "confirmResetApp": MessageLookupByLibrary.simpleMessage(
-            "Are you sure you want to reset the app? Your accounts will NOT be deleted"),
+            "您確定要重置應用程式嗎？您的帳戶將不會被刪除。"),
         "confirmSignATransactionToAddressFor": m4,
-        "confirmSigning":
-            MessageLookupByLibrary.simpleMessage("Confirm Signing"),
-        "confs": MessageLookupByLibrary.simpleMessage("Confs"),
-        "contactName": MessageLookupByLibrary.simpleMessage("Contact Name"),
-        "contacts": MessageLookupByLibrary.simpleMessage("Contacts"),
-        "convertToWatchonly":
-            MessageLookupByLibrary.simpleMessage("Convert to Watch-Only"),
-        "copy": MessageLookupByLibrary.simpleMessage("Copy"),
-        "count": MessageLookupByLibrary.simpleMessage("Count"),
-        "createANewAccount":
-            MessageLookupByLibrary.simpleMessage("Tap + to add a new account"),
-        "createANewContactAndItWillShowUpHere":
-            MessageLookupByLibrary.simpleMessage("Tap + to add a new contact"),
-        "crypto": MessageLookupByLibrary.simpleMessage("Crypto"),
-        "currency": MessageLookupByLibrary.simpleMessage("Currency"),
-        "currentPassword":
-            MessageLookupByLibrary.simpleMessage("Current Password"),
-        "currentPasswordIncorrect":
-            MessageLookupByLibrary.simpleMessage("Current password incorrect"),
-        "custom": MessageLookupByLibrary.simpleMessage("Custom"),
-        "dark": MessageLookupByLibrary.simpleMessage("Dark"),
-        "databaseEncrypted":
-            MessageLookupByLibrary.simpleMessage("Database Encrypted"),
-        "databasePassword":
-            MessageLookupByLibrary.simpleMessage("Database Password"),
-        "databaseRestored":
-            MessageLookupByLibrary.simpleMessage("Database Restored"),
-        "date": MessageLookupByLibrary.simpleMessage("Date"),
-        "datetime": MessageLookupByLibrary.simpleMessage("Date/Time"),
-        "dbImportSuccessful":
-            MessageLookupByLibrary.simpleMessage("Db Import Successful"),
-        "defaultMemo": MessageLookupByLibrary.simpleMessage("Default Memo"),
-        "delete": MessageLookupByLibrary.simpleMessage("DELETE"),
-        "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete Account"),
-        "deleteContact": MessageLookupByLibrary.simpleMessage("Delete contact"),
-        "deleteTemplate":
-            MessageLookupByLibrary.simpleMessage("Delete Template?"),
-        "derivationPath":
-            MessageLookupByLibrary.simpleMessage("Derivation Path"),
-        "disconnected": MessageLookupByLibrary.simpleMessage("Disconnected"),
-        "doYouWantToDeleteTheSecretKeyAndConvert":
-            MessageLookupByLibrary.simpleMessage(
-                "Do you want to DELETE the secret key and convert this account to a watch-only account? You will not be able to spend from this device anymore. This operation is NOT reversible."),
+        "confirmSigning": MessageLookupByLibrary.simpleMessage("確認簽名"),
+        "confs": MessageLookupByLibrary.simpleMessage("確認數量"),
+        "contactName": MessageLookupByLibrary.simpleMessage("聯絡人名稱"),
+        "contacts": MessageLookupByLibrary.simpleMessage("聯絡人"),
+        "convertToWatchonly": MessageLookupByLibrary.simpleMessage("轉為僅查看"),
+        "copy": MessageLookupByLibrary.simpleMessage("複製"),
+        "count": MessageLookupByLibrary.simpleMessage("計數"),
+        "createANewAccount": MessageLookupByLibrary.simpleMessage("點擊 + 添加新帳戶"),
+        "createANewContactAndItWillShowUpHere": MessageLookupByLibrary.simpleMessage("點擊 + 添加新聯絡人"),
+        "crypto": MessageLookupByLibrary.simpleMessage("加密貨幣"),
+        "currency": MessageLookupByLibrary.simpleMessage("貨幣"),
+        "currentPassword": MessageLookupByLibrary.simpleMessage("當前密碼"),
+        "currentPasswordIncorrect": MessageLookupByLibrary.simpleMessage("當前密碼不正確"),
+        "custom": MessageLookupByLibrary.simpleMessage("自定義"),
+        "dark": MessageLookupByLibrary.simpleMessage("暗黑模式"),
+        "databaseEncrypted": MessageLookupByLibrary.simpleMessage("數據庫已加密"),
+        "databasePassword": MessageLookupByLibrary.simpleMessage("數據庫密碼"),
+        "databaseRestored": MessageLookupByLibrary.simpleMessage("數據庫已恢復"),
+        "date": MessageLookupByLibrary.simpleMessage("日期"),
+        "datetime": MessageLookupByLibrary.simpleMessage("日期/時間"),
+        "dbImportSuccessful": MessageLookupByLibrary.simpleMessage("數據庫導入成功"),
+        "defaultMemo": MessageLookupByLibrary.simpleMessage("默認備註"),
+        "delete": MessageLookupByLibrary.simpleMessage("刪除"),
+        "deleteAccount": MessageLookupByLibrary.simpleMessage("刪除帳戶"),
+        "deleteContact": MessageLookupByLibrary.simpleMessage("刪除聯絡人"),
+        "deleteTemplate": MessageLookupByLibrary.simpleMessage("刪除模板？"),
+        "derivationPath": MessageLookupByLibrary.simpleMessage("導出路徑"),
+        "disconnected": MessageLookupByLibrary.simpleMessage("未連接"),
+        "doYouWantToDeleteTheSecretKeyAndConvert": MessageLookupByLibrary.simpleMessage(
+            "您是否要刪除密鑰並將此帳戶轉換為僅查看帳戶？您將無法再從此設備進行支付。此操作不可撤銷。"),
         "doYouWantToRestore": MessageLookupByLibrary.simpleMessage(
-            "Do you want to restore your database? THIS WILL ERASE YOUR CURRENT DATA"),
+            "您是否要恢復您的數據庫？這將刪除您當前的數據。"),
         "doYouWantToTransferYourEntireTransparentBalanceTo": m5,
-        "duplicateAccount":
-            MessageLookupByLibrary.simpleMessage("Duplicate Account"),
-        "duplicateContact": MessageLookupByLibrary.simpleMessage(
-            "Another contact has this address"),
-        "editContact": MessageLookupByLibrary.simpleMessage("Edit Contact"),
-        "encryptDatabase":
-            MessageLookupByLibrary.simpleMessage("Encrypt Database"),
+        "duplicateAccount": MessageLookupByLibrary.simpleMessage("重複帳戶"),
+        "duplicateContact": MessageLookupByLibrary.simpleMessage("另一個聯絡人已擁有該地址"),
+        "editContact": MessageLookupByLibrary.simpleMessage("編輯聯絡人"),
+        "encryptDatabase": MessageLookupByLibrary.simpleMessage("加密數據庫"),
         "encryptedBackup": m6,
-        "encryptionKey": MessageLookupByLibrary.simpleMessage("Encryption Key"),
-        "enterSecretShareIfAccountIsMultisignature":
-            MessageLookupByLibrary.simpleMessage(
-                "Enter secret share if account is multi-signature"),
-        "enterSeed": MessageLookupByLibrary.simpleMessage(
-            "Enter Seed, Secret Key or Viewing Key. Leave blank for a new account"),
+        "encryptionKey": MessageLookupByLibrary.simpleMessage("加密金鑰"),
+        "enterSecretShareIfAccountIsMultisignature": MessageLookupByLibrary.simpleMessage("如果帳戶是多簽名的，請輸入密鑰份額"),
+        "enterSeed": MessageLookupByLibrary.simpleMessage("輸入種子、密鑰或查看金鑰。留空以創建新帳戶"),
         "error": m7,
-        "excludedNotes": MessageLookupByLibrary.simpleMessage("Excluded Notes"),
-        "expert": MessageLookupByLibrary.simpleMessage("Expert"),
-        "fileSaved": MessageLookupByLibrary.simpleMessage("File saved"),
-        "fromPool": MessageLookupByLibrary.simpleMessage("From Pool"),
-        "fromto": MessageLookupByLibrary.simpleMessage("From/To"),
-        "fullBackup": MessageLookupByLibrary.simpleMessage("Full Backup"),
-        "fullRestore": MessageLookupByLibrary.simpleMessage("Full Restore"),
-        "gapLimit": MessageLookupByLibrary.simpleMessage("Gap Limit"),
-        "goToTransaction":
-            MessageLookupByLibrary.simpleMessage("Show Transaction"),
-        "gold": MessageLookupByLibrary.simpleMessage("Gold"),
-        "height": MessageLookupByLibrary.simpleMessage("Height"),
-        "help": MessageLookupByLibrary.simpleMessage("Help"),
-        "high": MessageLookupByLibrary.simpleMessage("High"),
-        "history": MessageLookupByLibrary.simpleMessage("History"),
-        "iHaveMadeABackup":
-            MessageLookupByLibrary.simpleMessage("I have made a backup"),
-        "import": MessageLookupByLibrary.simpleMessage("Import"),
-        "includeFeeInAmount":
-            MessageLookupByLibrary.simpleMessage("Include Fee in Amount"),
-        "includeReplyTo":
-            MessageLookupByLibrary.simpleMessage("Include My Address in Memo"),
-        "incomingFunds": MessageLookupByLibrary.simpleMessage("Incoming funds"),
-        "inputBarcodeValue":
-            MessageLookupByLibrary.simpleMessage("Input barcode"),
-        "invalidAddress":
-            MessageLookupByLibrary.simpleMessage("Invalid Address"),
-        "invalidKey": MessageLookupByLibrary.simpleMessage("Invalid Key"),
-        "invalidPassword":
-            MessageLookupByLibrary.simpleMessage("Invalid Password"),
+        "excludedNotes": MessageLookupByLibrary.simpleMessage("排除的備註"),
+        "expert": MessageLookupByLibrary.simpleMessage("專家"),
+        "fileSaved": MessageLookupByLibrary.simpleMessage("文件已保存"),
+        "fromPool": MessageLookupByLibrary.simpleMessage("來自Pool"),
+        "fromto": MessageLookupByLibrary.simpleMessage("來自/發送至"),
+        "fullBackup": MessageLookupByLibrary.simpleMessage("完整備份"),
+        "fullRestore": MessageLookupByLibrary.simpleMessage("完整恢復"),
+        "gapLimit": MessageLookupByLibrary.simpleMessage("間隙限制"),
+        "goToTransaction": MessageLookupByLibrary.simpleMessage("查看交易"),
+        "gold": MessageLookupByLibrary.simpleMessage("黃金"),
+        "height": MessageLookupByLibrary.simpleMessage("高度"),
+        "help": MessageLookupByLibrary.simpleMessage("幫助"),
+        "high": MessageLookupByLibrary.simpleMessage("高"),
+        "history": MessageLookupByLibrary.simpleMessage("歷史記錄"),
+        "iHaveMadeABackup": MessageLookupByLibrary.simpleMessage("我已經備份了"),
+        "import": MessageLookupByLibrary.simpleMessage("導入"),
+        "includeFeeInAmount": MessageLookupByLibrary.simpleMessage("在金額中包含手續費"),
+        "includeReplyTo": MessageLookupByLibrary.simpleMessage("在備註中包含我的地址"),
+        "incomingFunds": MessageLookupByLibrary.simpleMessage("收到的資金"),
+        "inputBarcodeValue": MessageLookupByLibrary.simpleMessage("輸入條碼值"),
+        "invalidAddress": MessageLookupByLibrary.simpleMessage("無效地址"),
+        "invalidKey": MessageLookupByLibrary.simpleMessage("無效金鑰"),
+        "invalidPassword": MessageLookupByLibrary.simpleMessage("無效密碼"),
         "invalidQrCode": m8,
-        "key": MessageLookupByLibrary.simpleMessage(
-            "Seed, Secret Key or View Key (optional)"),
-        "keyTool": MessageLookupByLibrary.simpleMessage("Key Tool"),
-        "largestSpendingLastMonth":
-            MessageLookupByLibrary.simpleMessage("Largest Spending Last Month"),
-        "largestSpendingsByAddress": MessageLookupByLibrary.simpleMessage(
-            "Largest Spendings by Address"),
+        "key": MessageLookupByLibrary.simpleMessage("種子、密鑰或查看金鑰（選填）"),
+        "keyTool": MessageLookupByLibrary.simpleMessage("金鑰工具"),
+        "largestSpendingLastMonth": MessageLookupByLibrary.simpleMessage("上個月最大花費"),
+        "largestSpendingsByAddress": MessageLookupByLibrary.simpleMessage("地址最大花費"),
         "ledger": MessageLookupByLibrary.simpleMessage("Ledger"),
-        "light": MessageLookupByLibrary.simpleMessage("Light"),
-        "loadBackup": MessageLookupByLibrary.simpleMessage("Load Backup"),
-        "loading": MessageLookupByLibrary.simpleMessage("Loading..."),
-        "low": MessageLookupByLibrary.simpleMessage("Low"),
-        "markAllAsRead":
-            MessageLookupByLibrary.simpleMessage("Mark All as Read"),
-        "max": MessageLookupByLibrary.simpleMessage("MAX"),
-        "maxAmountPerNote":
-            MessageLookupByLibrary.simpleMessage("Max Amount per Note"),
+        "light": MessageLookupByLibrary.simpleMessage("亮"),
+        "loadBackup": MessageLookupByLibrary.simpleMessage("載入備份"),
+        "loading": MessageLookupByLibrary.simpleMessage("載入中..."),
+        "low": MessageLookupByLibrary.simpleMessage("低"),
+        "markAllAsRead": MessageLookupByLibrary.simpleMessage("全部標記為已讀"),
+        "max": MessageLookupByLibrary.simpleMessage("最大值"),
+        "maxAmountPerNote": MessageLookupByLibrary.simpleMessage("每筆備註最大金額"),
         "maxSpendableAmount": m9,
-        "medium": MessageLookupByLibrary.simpleMessage("Medium"),
-        "memo": MessageLookupByLibrary.simpleMessage("Memo"),
-        "message": MessageLookupByLibrary.simpleMessage("Message"),
-        "messages": MessageLookupByLibrary.simpleMessage("Messages"),
-        "minPrivacy": MessageLookupByLibrary.simpleMessage("Min Privacy"),
+        "medium": MessageLookupByLibrary.simpleMessage("中等"),
+        "memo": MessageLookupByLibrary.simpleMessage("備註"),
+        "message": MessageLookupByLibrary.simpleMessage("訊息"),
+        "messages": MessageLookupByLibrary.simpleMessage("訊息"),
+        "minPrivacy": MessageLookupByLibrary.simpleMessage("最小隱私"),
         "mm": MessageLookupByLibrary.simpleMessage("M/M"),
-        "mobileCharges": MessageLookupByLibrary.simpleMessage(
-            "On Mobile Data, scanning may incur additional charges. Do you want to proceed?"),
-        "mode": MessageLookupByLibrary.simpleMessage("Mode"),
-        "multiPay": MessageLookupByLibrary.simpleMessage("Multi Pay"),
-        "multipay": MessageLookupByLibrary.simpleMessage("MultiPay"),
-        "multipleAddresses":
-            MessageLookupByLibrary.simpleMessage("multiple addresses"),
-        "multisig": MessageLookupByLibrary.simpleMessage("Multisig"),
-        "multisigShares":
-            MessageLookupByLibrary.simpleMessage("Multisig Shares"),
+        "mobileCharges": MessageLookupByLibrary.simpleMessage("使用行動數據可能產生額外費用。是否繼續？"),
+        "mode": MessageLookupByLibrary.simpleMessage("模式"),
+        "multiPay": MessageLookupByLibrary.simpleMessage("多重支付"),
+        "multipay": MessageLookupByLibrary.simpleMessage("多重支付"),
+        "multipleAddresses": MessageLookupByLibrary.simpleMessage("多個地址"),
+        "multisig": MessageLookupByLibrary.simpleMessage("多重簽名"),
+        "multisigShares": MessageLookupByLibrary.simpleMessage("多重簽名分享"),
         "na": MessageLookupByLibrary.simpleMessage("N/A"),
-        "name": MessageLookupByLibrary.simpleMessage("Name"),
-        "nameIsEmpty": MessageLookupByLibrary.simpleMessage("Name is empty"),
-        "never": MessageLookupByLibrary.simpleMessage("Never"),
-        "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
-        "newLabel": MessageLookupByLibrary.simpleMessage("New"),
-        "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
-        "newPasswordsDoNotMatch":
-            MessageLookupByLibrary.simpleMessage("New passwords do not match"),
-        "newSnapAddress":
-            MessageLookupByLibrary.simpleMessage("New Snap Address"),
-        "newSubAccount":
-            MessageLookupByLibrary.simpleMessage("New Sub Account"),
-        "newTemplate": MessageLookupByLibrary.simpleMessage("New Template"),
-        "noAccount": MessageLookupByLibrary.simpleMessage("No account"),
-        "noActiveAccount":
-            MessageLookupByLibrary.simpleMessage("No active account"),
-        "noAuthenticationMethod":
-            MessageLookupByLibrary.simpleMessage("No Authentication Method"),
-        "noContacts": MessageLookupByLibrary.simpleMessage("No Contacts"),
-        "noRecipient": MessageLookupByLibrary.simpleMessage("No Recipient"),
-        "noSpendingInTheLast30Days": MessageLookupByLibrary.simpleMessage(
-            "No Spending in the Last 30 Days"),
-        "notEnoughBalance":
-            MessageLookupByLibrary.simpleMessage("Not enough balance"),
-        "notes": MessageLookupByLibrary.simpleMessage("Notes"),
-        "now": MessageLookupByLibrary.simpleMessage("Now"),
+        "name": MessageLookupByLibrary.simpleMessage("名稱"),
+        "nameIsEmpty": MessageLookupByLibrary.simpleMessage("名稱為空"),
+        "never": MessageLookupByLibrary.simpleMessage("從不"),
+        "newAccount": MessageLookupByLibrary.simpleMessage("新帳戶"),
+        "newLabel": MessageLookupByLibrary.simpleMessage("新"),
+        "newPassword": MessageLookupByLibrary.simpleMessage("新密碼"),
+        "newPasswordsDoNotMatch": MessageLookupByLibrary.simpleMessage("新密碼不相符"),
+        "newSnapAddress": MessageLookupByLibrary.simpleMessage("新的 Snap 地址"),
+        "newSubAccount": MessageLookupByLibrary.simpleMessage("新子帳戶"),
+        "newTemplate": MessageLookupByLibrary.simpleMessage("新範本"),
+        "noAccount": MessageLookupByLibrary.simpleMessage("無帳戶"),
+        "noActiveAccount": MessageLookupByLibrary.simpleMessage("無活躍帳戶"),
+        "noAuthenticationMethod": MessageLookupByLibrary.simpleMessage("無認證方法"),
+        "noContacts": MessageLookupByLibrary.simpleMessage("無聯絡人"),
+        "noRecipient": MessageLookupByLibrary.simpleMessage("無收款人"),
+        "noSpendingInTheLast30Days": MessageLookupByLibrary.simpleMessage("過去30天無消費"),
+        "notEnoughBalance": MessageLookupByLibrary.simpleMessage("餘額不足"),
+        "notes": MessageLookupByLibrary.simpleMessage("備註"),
+        "now": MessageLookupByLibrary.simpleMessage("現在"),
         "numMoreSignersNeeded": m10,
-        "numberOfConfirmationsNeededBeforeSpending":
-            MessageLookupByLibrary.simpleMessage(
-                "Number of Confirmations Needed before Spending"),
-        "ok": MessageLookupByLibrary.simpleMessage("OK"),
-        "openInExplorer":
-            MessageLookupByLibrary.simpleMessage("Open in Explorer"),
-        "paymentInProgress":
-            MessageLookupByLibrary.simpleMessage("Payment in progress..."),
-        "paymentMade": MessageLookupByLibrary.simpleMessage("Payment made"),
-        "pink": MessageLookupByLibrary.simpleMessage("Pink"),
-        "pl": MessageLookupByLibrary.simpleMessage("P/L"),
-        "playSound": MessageLookupByLibrary.simpleMessage("Play Sound"),
-        "pleaseAuthenticateToSend":
-            MessageLookupByLibrary.simpleMessage("Please authenticate to Send"),
-        "pleaseAuthenticateToShowAccountSeed":
-            MessageLookupByLibrary.simpleMessage(
-                "Please authenticate to show account seed"),
-        "pleaseConfirm": MessageLookupByLibrary.simpleMessage("Please Confirm"),
-        "pleaseQuitAndRestartTheAppNow": MessageLookupByLibrary.simpleMessage(
-            "Please Quit and Restart the app now"),
-        "pnl": MessageLookupByLibrary.simpleMessage("Pnl"),
-        "pnlHistory": MessageLookupByLibrary.simpleMessage("PNL History"),
-        "pools": MessageLookupByLibrary.simpleMessage("Pool Transfer"),
-        "preparingTransaction":
-            MessageLookupByLibrary.simpleMessage("Preparing transaction..."),
-        "price": MessageLookupByLibrary.simpleMessage("Price"),
-        "primary": MessageLookupByLibrary.simpleMessage("Primary"),
+        "numberOfConfirmationsNeededBeforeSpending": MessageLookupByLibrary.simpleMessage("在支出之前所需的確認次數"),
+        "ok": MessageLookupByLibrary.simpleMessage("確定"),
+        "openInExplorer": MessageLookupByLibrary.simpleMessage("在瀏覽器中開啟"),
+        "paymentInProgress": MessageLookupByLibrary.simpleMessage("付款進行中..."),
+        "paymentMade": MessageLookupByLibrary.simpleMessage("已付款"),
+        "pink": MessageLookupByLibrary.simpleMessage("粉紅色"),
+        "pl": MessageLookupByLibrary.simpleMessage("盈虧"),
+        "playSound": MessageLookupByLibrary.simpleMessage("播放音效"),
+        "pleaseAuthenticateToSend": MessageLookupByLibrary.simpleMessage("請驗證以進行轉帳"),
+        "pleaseAuthenticateToShowAccountSeed": MessageLookupByLibrary.simpleMessage("請驗證以顯示帳戶種子"),
+        "pleaseConfirm": MessageLookupByLibrary.simpleMessage("請確認"),
+        "pleaseQuitAndRestartTheAppNow": MessageLookupByLibrary.simpleMessage("請退出並重新啟動應用程式"),
+        "pnl": MessageLookupByLibrary.simpleMessage("PNL"),
+        "pnlHistory": MessageLookupByLibrary.simpleMessage("PNL 歷史"),
+        "pools": MessageLookupByLibrary.simpleMessage("Pool 轉帳"),
+        "preparingTransaction": MessageLookupByLibrary.simpleMessage("準備交易中..."),
+        "price": MessageLookupByLibrary.simpleMessage("價格"),
+        "primary": MessageLookupByLibrary.simpleMessage("主要"),
         "privacy": m11,
-        "privacyLevelTooLow": MessageLookupByLibrary.simpleMessage(
-            "Privacy Too LOW - Long press to override"),
-        "privateKey": MessageLookupByLibrary.simpleMessage("Private Key"),
-        "protectOpen": MessageLookupByLibrary.simpleMessage("Protect Open"),
-        "protectSend": MessageLookupByLibrary.simpleMessage("Protect Send"),
-        "protectSendSettingChanged": MessageLookupByLibrary.simpleMessage(
-            "Protect Send setting changed"),
-        "purple": MessageLookupByLibrary.simpleMessage("Purple"),
-        "qty": MessageLookupByLibrary.simpleMessage("Qty"),
-        "rawTransaction":
-            MessageLookupByLibrary.simpleMessage("Raw Transaction"),
-        "realized": MessageLookupByLibrary.simpleMessage("Realized"),
+        "privacyLevelTooLow": MessageLookupByLibrary.simpleMessage("隱私等級太低 - 長按以覆寫"),
+        "privateKey": MessageLookupByLibrary.simpleMessage("私鑰"),
+        "protectOpen": MessageLookupByLibrary.simpleMessage("保護開啟"),
+        "protectSend": MessageLookupByLibrary.simpleMessage("保護轉帳"),
+        "protectSendSettingChanged": MessageLookupByLibrary.simpleMessage("保護轉帳設定已變更"),
+        "purple": MessageLookupByLibrary.simpleMessage("紫色"),
+        "qty": MessageLookupByLibrary.simpleMessage("數量"),
+        "rawTransaction": MessageLookupByLibrary.simpleMessage("原始交易"),
+        "realized": MessageLookupByLibrary.simpleMessage("實現"),
         "receive": m12,
-        "receivePayment":
-            MessageLookupByLibrary.simpleMessage("Receive Payment"),
+        "receivePayment": MessageLookupByLibrary.simpleMessage("接收付款"),
         "received": m13,
-        "recipient": MessageLookupByLibrary.simpleMessage("Recipient"),
-        "repeatNewPassword":
-            MessageLookupByLibrary.simpleMessage("Repeat New Password"),
-        "reply": MessageLookupByLibrary.simpleMessage("Reply"),
-        "rescan": MessageLookupByLibrary.simpleMessage("Rescan"),
-        "rescanFrom": MessageLookupByLibrary.simpleMessage("Rescan from..."),
-        "rescanNeeded": MessageLookupByLibrary.simpleMessage("Rescan Needed"),
+        "recipient": MessageLookupByLibrary.simpleMessage("收款人"),
+        "repeatNewPassword": MessageLookupByLibrary.simpleMessage("重複新密碼"),
+        "reply": MessageLookupByLibrary.simpleMessage("回覆"),
+        "rescan": MessageLookupByLibrary.simpleMessage("重新掃描"),
+        "rescanFrom": MessageLookupByLibrary.simpleMessage("重新掃描自..."),
+        "rescanNeeded": MessageLookupByLibrary.simpleMessage("需要重新掃描"),
         "rescanRequested": m14,
-        "rescanning": MessageLookupByLibrary.simpleMessage("Rescanning..."),
-        "reset": MessageLookupByLibrary.simpleMessage("Reset"),
-        "restart": MessageLookupByLibrary.simpleMessage("Restart"),
-        "restoreAnAccount":
-            MessageLookupByLibrary.simpleMessage("Restore an account?"),
-        "resumeScan": MessageLookupByLibrary.simpleMessage("Resume Scan"),
-        "retrieveTransactionDetails": MessageLookupByLibrary.simpleMessage(
-            "Retrieve Transaction Details"),
-        "rewindToCheckpoint":
-            MessageLookupByLibrary.simpleMessage("Rewind to Checkpoint"),
-        "roundToMillis":
-            MessageLookupByLibrary.simpleMessage("Round to millis"),
-        "save": MessageLookupByLibrary.simpleMessage("Save"),
-        "saveBackup": MessageLookupByLibrary.simpleMessage("Save Backup"),
-        "saveToBlockchain":
-            MessageLookupByLibrary.simpleMessage("Save to Blockchain"),
-        "scanQrCode": MessageLookupByLibrary.simpleMessage("Scan QR Code"),
-        "scanStartingMomentarily":
-            MessageLookupByLibrary.simpleMessage("Scan starting momentarily"),
-        "scanTransparentAddresses":
-            MessageLookupByLibrary.simpleMessage("Scan Transparent Addresses"),
-        "scanningAddresses":
-            MessageLookupByLibrary.simpleMessage("Scanning addresses"),
-        "secondary": MessageLookupByLibrary.simpleMessage("Secondary"),
-        "secretKey": MessageLookupByLibrary.simpleMessage("Secret Key"),
-        "secretShare": MessageLookupByLibrary.simpleMessage("Secret Share"),
-        "seed": MessageLookupByLibrary.simpleMessage("Seed"),
-        "selectAccount": MessageLookupByLibrary.simpleMessage("Select Account"),
-        "selectCheckpoint":
-            MessageLookupByLibrary.simpleMessage("Select Checkpoint"),
-        "selectNotesToExcludeFromPayments":
-            MessageLookupByLibrary.simpleMessage(
-                "Select notes to EXCLUDE from payments"),
-        "send": MessageLookupByLibrary.simpleMessage("Send"),
+        "rescanning": MessageLookupByLibrary.simpleMessage("正在重新掃描..."),
+        "reset": MessageLookupByLibrary.simpleMessage("重置"),
+        "restart": MessageLookupByLibrary.simpleMessage("重新啟動"),
+        "restoreAnAccount": MessageLookupByLibrary.simpleMessage("還原帳戶?"),
+        "resumeScan": MessageLookupByLibrary.simpleMessage("繼續掃描"),
+        "retrieveTransactionDetails": MessageLookupByLibrary.simpleMessage("檢索交易詳細信息"),
+        "rewindToCheckpoint": MessageLookupByLibrary.simpleMessage("回到檢查點"),
+        "roundToMillis": MessageLookupByLibrary.simpleMessage("四捨五入至毫秒"),
+        "save": MessageLookupByLibrary.simpleMessage("儲存"),
+        "saveBackup": MessageLookupByLibrary.simpleMessage("儲存備份"),
+        "saveToBlockchain": MessageLookupByLibrary.simpleMessage("儲存到區塊鏈"),
+        "scanQrCode": MessageLookupByLibrary.simpleMessage("掃描 QR 碼"),
+        "scanStartingMomentarily": MessageLookupByLibrary.simpleMessage("即將開始掃描"),
+        "scanTransparentAddresses": MessageLookupByLibrary.simpleMessage("掃描透明地址"),
+        "scanningAddresses": MessageLookupByLibrary.simpleMessage("正在掃描地址"),
+        "secondary": MessageLookupByLibrary.simpleMessage("次要"),
+        "secretKey": MessageLookupByLibrary.simpleMessage("私鑰"),
+        "secretShare": MessageLookupByLibrary.simpleMessage("秘密分享"),
+        "seed": MessageLookupByLibrary.simpleMessage("種子"),
+        "selectAccount": MessageLookupByLibrary.simpleMessage("選擇帳戶"),
+        "selectCheckpoint": MessageLookupByLibrary.simpleMessage("選擇檢查點"),
+        "selectNotesToExcludeFromPayments": MessageLookupByLibrary.simpleMessage("選擇要排除的付款備註"),
+        "send": MessageLookupByLibrary.simpleMessage("發送"),
         "sendCointicker": m15,
         "sendCointickerTo": m16,
         "sendFrom": m17,
-        "sender": MessageLookupByLibrary.simpleMessage("Sender"),
+        "sender": MessageLookupByLibrary.simpleMessage("寄件人"),
         "sendingATotalOfAmountCointickerToCountRecipients": m18,
         "sendingAzecCointickerToAddress": m19,
-        "server": MessageLookupByLibrary.simpleMessage("Server"),
-        "set": MessageLookupByLibrary.simpleMessage("Set"),
-        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
-        "shieldTranspBalance":
-            MessageLookupByLibrary.simpleMessage("Shield Transp. Balance"),
-        "shieldTransparentBalance":
-            MessageLookupByLibrary.simpleMessage("Shield Transparent Balance"),
-        "shieldTransparentBalanceWithSending":
-            MessageLookupByLibrary.simpleMessage(
-                "Shield Transparent Balance When Sending"),
-        "shieldingInProgress":
-            MessageLookupByLibrary.simpleMessage("Shielding in progress..."),
-        "showMessagesAsTable":
-            MessageLookupByLibrary.simpleMessage("Show Messages as Table"),
-        "sign": MessageLookupByLibrary.simpleMessage("Sign Transaction"),
-        "signOffline": MessageLookupByLibrary.simpleMessage("Sign"),
-        "signOnYourOfflineDevice":
-            MessageLookupByLibrary.simpleMessage("Sign on your offline device"),
-        "signedTx": MessageLookupByLibrary.simpleMessage("Signed Tx"),
-        "signingPleaseWait":
-            MessageLookupByLibrary.simpleMessage("Signing, please wait..."),
-        "simple": MessageLookupByLibrary.simpleMessage("Simple"),
-        "simpleMode": MessageLookupByLibrary.simpleMessage("Simple Mode"),
-        "spendable": MessageLookupByLibrary.simpleMessage("Spendable"),
-        "spendableBalance":
-            MessageLookupByLibrary.simpleMessage("Spendable Balance"),
+        "server": MessageLookupByLibrary.simpleMessage("伺服器"),
+        "set": MessageLookupByLibrary.simpleMessage("設定"),
+        "settings": MessageLookupByLibrary.simpleMessage("設定"),
+        "shieldTranspBalance": MessageLookupByLibrary.simpleMessage("隱藏透明餘額"),
+        "shieldTransparentBalance": MessageLookupByLibrary.simpleMessage("隱藏透明餘額"),
+        "shieldTransparentBalanceWithSending": MessageLookupByLibrary.simpleMessage("發送時隱藏透明餘額"),
+        "shieldingInProgress": MessageLookupByLibrary.simpleMessage("隱藏進行中..."),
+        "showMessagesAsTable": MessageLookupByLibrary.simpleMessage("以表格顯示訊息"),
+        "sign": MessageLookupByLibrary.simpleMessage("簽署交易"),
+        "signOffline": MessageLookupByLibrary.simpleMessage("簽署"),
+        "signOnYourOfflineDevice": MessageLookupByLibrary.simpleMessage("在離線裝置上簽署"),
+        "signedTx": MessageLookupByLibrary.simpleMessage("已簽署交易"),
+        "signingPleaseWait": MessageLookupByLibrary.simpleMessage("正在簽署，請稍候..."),
+        "simple": MessageLookupByLibrary.simpleMessage("簡易"),
+        "simpleMode": MessageLookupByLibrary.simpleMessage("簡易模式"),
+        "spendable": MessageLookupByLibrary.simpleMessage("可使用"),
+        "spendableBalance": MessageLookupByLibrary.simpleMessage("可用餘額"),
         "spent": m20,
-        "splitAccount": MessageLookupByLibrary.simpleMessage("Split Account"),
-        "splitNotes": MessageLookupByLibrary.simpleMessage("Split Notes"),
+        "splitAccount": MessageLookupByLibrary.simpleMessage("拆分帳戶"),
+        "splitNotes": MessageLookupByLibrary.simpleMessage("拆分備註"),
         "subAccountIndexOf": m21,
         "subAccountOf": m22,
-        "subject": MessageLookupByLibrary.simpleMessage("Subject"),
-        "sweep": MessageLookupByLibrary.simpleMessage("Sweep"),
-        "syncPaused": MessageLookupByLibrary.simpleMessage("Sync Paused"),
-        "synching": MessageLookupByLibrary.simpleMessage("Synching"),
-        "synchronizationInProgress":
-            MessageLookupByLibrary.simpleMessage("Synchronization in Progress"),
-        "table": MessageLookupByLibrary.simpleMessage("Table"),
-        "tapAnIconToShowTheQrCode": MessageLookupByLibrary.simpleMessage(
-            "Tap an icon to show the QR code"),
-        "tapChartToToggleBetweenAddressAndAmount":
-            MessageLookupByLibrary.simpleMessage(
-                "Tap Chart to Toggle between Address and Amount"),
-        "tapQrCodeForSaplingAddress": MessageLookupByLibrary.simpleMessage(
-            "Tap QR Code for Sapling Address"),
-        "tapQrCodeForShieldedAddress": MessageLookupByLibrary.simpleMessage(
-            "Tap QR Code for Shielded Address"),
-        "tapQrCodeForTransparentAddress": MessageLookupByLibrary.simpleMessage(
-            "Tap QR Code for Transparent Address"),
-        "tapTransactionForDetails":
-            MessageLookupByLibrary.simpleMessage("Tap Transaction for Details"),
-        "template": MessageLookupByLibrary.simpleMessage("Template"),
+        "subject": MessageLookupByLibrary.simpleMessage("主題"),
+        "sweep": MessageLookupByLibrary.simpleMessage("清除"),
+        "syncPaused": MessageLookupByLibrary.simpleMessage("同步已暫停"),
+        "synching": MessageLookupByLibrary.simpleMessage("同步中"),
+        "synchronizationInProgress": MessageLookupByLibrary.simpleMessage("同步進行中"),
+        "table": MessageLookupByLibrary.simpleMessage("表格"),
+        "tapAnIconToShowTheQrCode": MessageLookupByLibrary.simpleMessage("點擊圖示顯示 QR 碼"),
+        "tapChartToToggleBetweenAddressAndAmount": MessageLookupByLibrary.simpleMessage("點擊圖表切換地址和金額"),
+        "tapQrCodeForSaplingAddress": MessageLookupByLibrary.simpleMessage("點擊 QR 碼查看 Sapling 地址"),
+        "tapQrCodeForShieldedAddress": MessageLookupByLibrary.simpleMessage("點擊 QR 碼查看隱藏地址"),
+        "tapQrCodeForTransparentAddress": MessageLookupByLibrary.simpleMessage("點擊 QR 碼查看透明地址"),
+        "tapTransactionForDetails": MessageLookupByLibrary.simpleMessage("點擊交易以查看詳細信息"),
+        "template": MessageLookupByLibrary.simpleMessage("範本"),
         "textCopiedToClipboard": m23,
-        "thePrivateWalletMessenger": MessageLookupByLibrary.simpleMessage(
-            "The private wallet & messenger"),
-        "theme": MessageLookupByLibrary.simpleMessage("Theme"),
-        "themeEditor": MessageLookupByLibrary.simpleMessage("Theme Editor"),
-        "thisAccountAlreadyExists": MessageLookupByLibrary.simpleMessage(
-            "Another account has the same address"),
-        "tiltYourDeviceUpToRevealYourBalance":
-            MessageLookupByLibrary.simpleMessage(
-                "Tilt your device up to reveal your balance"),
-        "timestamp": MessageLookupByLibrary.simpleMessage("Timestamp"),
-        "toMakeAContactSendThemAMemoWithContact":
-            MessageLookupByLibrary.simpleMessage(
-                "To make a contact, send them a memo with Contact:"),
-        "toPool": MessageLookupByLibrary.simpleMessage("To Pool"),
-        "total": MessageLookupByLibrary.simpleMessage("Total"),
-        "totalBalance": MessageLookupByLibrary.simpleMessage("Total Balance"),
-        "tradingChartRange":
-            MessageLookupByLibrary.simpleMessage("Trading Chart Range"),
-        "tradingPl": MessageLookupByLibrary.simpleMessage("Wallet P&L"),
-        "transactionDetails":
-            MessageLookupByLibrary.simpleMessage("Transaction Details"),
-        "transactionHistory":
-            MessageLookupByLibrary.simpleMessage("Transaction History"),
-        "transactions": MessageLookupByLibrary.simpleMessage("Transactions"),
-        "transfer": MessageLookupByLibrary.simpleMessage("Transfer"),
-        "transparentKey":
-            MessageLookupByLibrary.simpleMessage("Transparent Key"),
+        "thePrivateWalletMessenger": MessageLookupByLibrary.simpleMessage("私人錢包和通訊器"),
+        "theme": MessageLookupByLibrary.simpleMessage("主題"),
+        "themeEditor": MessageLookupByLibrary.simpleMessage("主題編輯器"),
+        "thisAccountAlreadyExists": MessageLookupByLibrary.simpleMessage("另一個帳戶已存在"),
+        "tiltYourDeviceUpToRevealYourBalance": MessageLookupByLibrary.simpleMessage("傾斜裝置以顯示您的餘額"),
+        "timestamp": MessageLookupByLibrary.simpleMessage("時間戳"),
+        "toMakeAContactSendThemAMemoWithContact": MessageLookupByLibrary.simpleMessage("要建立聯絡人，請傳送帶有聯絡人的備註："),
+        "toPool": MessageLookupByLibrary.simpleMessage("至池"),
+        "total": MessageLookupByLibrary.simpleMessage("總計"),
+        "totalBalance": MessageLookupByLibrary.simpleMessage("總餘額"),
+        "tradingChartRange": MessageLookupByLibrary.simpleMessage("交易圖表範圍"),
+        "tradingPl": MessageLookupByLibrary.simpleMessage("錢包損益"),
+        "transactionDetails": MessageLookupByLibrary.simpleMessage("交易詳細信息"),
+        "transactionHistory": MessageLookupByLibrary.simpleMessage("交易歷史記錄"),
+        "transactions": MessageLookupByLibrary.simpleMessage("交易"),
+        "transfer": MessageLookupByLibrary.simpleMessage("轉帳"),
+        "transparentKey": MessageLookupByLibrary.simpleMessage("透明鑰匙"),
         "txId": m24,
-        "underConfirmed":
-            MessageLookupByLibrary.simpleMessage("Under Confirmed"),
-        "unifiedViewingKey":
-            MessageLookupByLibrary.simpleMessage("Unified Viewing Key"),
-        "unshielded": MessageLookupByLibrary.simpleMessage("Unshielded"),
-        "unshieldedBalance":
-            MessageLookupByLibrary.simpleMessage("Unshielded Balance"),
-        "unsignedTransactionFile":
-            MessageLookupByLibrary.simpleMessage("Unsigned Transaction File"),
-        "unsignedTx": MessageLookupByLibrary.simpleMessage("Unsigned Tx"),
-        "update": MessageLookupByLibrary.simpleMessage("Recalc"),
-        "useGpu": MessageLookupByLibrary.simpleMessage("Use GPU"),
-        "useQrForOfflineSigning":
-            MessageLookupByLibrary.simpleMessage("Use QR for offline signing"),
+        "underConfirmed": MessageLookupByLibrary.simpleMessage("尚未確認"),
+        "unifiedViewingKey": MessageLookupByLibrary.simpleMessage("統一查看鑰匙"),
+        "unshielded": MessageLookupByLibrary.simpleMessage("未隱藏"),
+        "unshieldedBalance": MessageLookupByLibrary.simpleMessage("未隱藏餘額"),
+        "unsignedTransactionFile": MessageLookupByLibrary.simpleMessage("未簽署的交易檔案"),
+        "unsignedTx": MessageLookupByLibrary.simpleMessage("未簽署的交易"),
+        "update": MessageLookupByLibrary.simpleMessage("重新計算"),
+        "useGpu": MessageLookupByLibrary.simpleMessage("使用 GPU"),
+        "useQrForOfflineSigning": MessageLookupByLibrary.simpleMessage("離線簽署使用 QR 碼"),
         "useSettingscurrency": m25,
-        "useTransparentBalance":
-            MessageLookupByLibrary.simpleMessage("Use Transparent Balance"),
-        "useUa": MessageLookupByLibrary.simpleMessage("Use UA"),
-        "version": MessageLookupByLibrary.simpleMessage("Version"),
-        "veryLow": MessageLookupByLibrary.simpleMessage("Very Low"),
-        "viewingKey": MessageLookupByLibrary.simpleMessage("Viewing Key"),
-        "welcomeToYwallet":
-            MessageLookupByLibrary.simpleMessage("Welcome to YWallet")
+        "useTransparentBalance": MessageLookupByLibrary.simpleMessage("使用透明餘額"),
+        "useUa": MessageLookupByLibrary.simpleMessage("使用 UA"),
+        "version": MessageLookupByLibrary.simpleMessage("版本"),
+        "veryLow": MessageLookupByLibrary.simpleMessage("非常低"),
+        "viewingKey": MessageLookupByLibrary.simpleMessage("查看鑰匙"),
+        "welcomeToYwallet": MessageLookupByLibrary.simpleMessage("歡迎使用 YWallet")
+        "viewingKey": MessageLookupByLibrary.simpleMessage("查看鑰匙"),
+        "welcomeToYwallet": MessageLookupByLibrary.simpleMessage("歡迎使用 YWallet")
       };
 }
